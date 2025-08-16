@@ -1,6 +1,5 @@
-# fantastic-octo-doodle
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,30 +16,40 @@
       background: #fff;
       border-radius: 15px;
       box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-      display: inline-block;
       padding: 30px;
+      display: inline-block;
       max-width: 400px;
     }
     h1 {
-      margin-bottom: 10px;
-      color: #444;
+      margin: 0;
+      font-size: 24px;
     }
     p {
-      font-size: 16px;
-      margin: 8px 0;
+      color: #555;
     }
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 10px 20px;
-      border-radius: 8px;
+      border-radius: 25px;
       text-decoration: none;
-      color: white;
       font-weight: bold;
+      transition: 0.3s;
     }
-    .twitter { background: #1DA1F2; }
-    .wechat { background: #07C160; }
-    .phone { background: #ff9800; }
+    .twitter {
+      background: #1DA1F2;
+      color: #fff;
+    }
+    .twitter:hover {
+      background: #0d8ddb;
+    }
+    .wechat {
+      background: #09b83e;
+      color: #fff;
+    }
+    .wechat:hover {
+      background: #069a31;
+    }
     audio {
       margin-top: 15px;
       width: 100%;
@@ -50,16 +59,14 @@
 <body>
   <div class="card">
     <h1>Luna Mok</h1>
-    <p>📱 电话：15578121642</p>
-
-    <a class="btn twitter" href="https://x.com/LunaMok198149?s=09" target="_blank">访问我的 Twitter</a>
-    <a class="btn wechat" href="weixin://">打开微信</a>
-    <a class="btn phone" href="tel:15578121642">拨打电话</a>
+    <p>欢迎来到我的个人主页 🌸</p>
+    <a href="https://twitter.com/" target="_blank" class="btn twitter">关注我的 Twitter</a>
+    <a href="weixin://" class="btn wechat">加我微信</a>
     
-    <h3>🎵 我的音频</h3>
+    <!-- 音频播放器 -->
     <audio controls>
-      <source src="VID_20250721200017829.mp3" type="audio/mpeg">
-      您的浏览器不支持音频播放。
+      <source src="music.mp3" type="audio/mpeg">
+      你的浏览器不支持播放音频
     </audio>
   </div>
 </body>
